@@ -64,8 +64,11 @@
       $height = 178;
     }
     
+    $image_reized = 'phpThumb/phpThumb.php?src=../images/'.$produto["id"].'.jpg&h=133';
+    
     //div 1: nome + foto
-      $html .= '<div class="product-main"><p><img src="images/'.$produto["id"].'.jpg"/><br/>'.$produto["nome"].'</p></div>';
+      //$html .= '<div class="product-main"><p><img src="images/'.$produto["id"].'.jpg"/><br/>'.$produto["nome"].'</p></div>';
+      $html .= '<div class="product-main"><p><img src="'.$image_reized.'"/><br/>'.$produto["nome"].'</p></div>';
     
     //div2: quantidade(opcional, se houver)
     //if(!empty($produto["quantidade"])){
