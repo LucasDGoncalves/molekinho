@@ -1,0 +1,11 @@
+folha sem margens
+
+largura: 730px
+altura: 1040px
+
+categoria: 30 px
+cada produto: 196px = 195 do produto + 1 de borda inferior
+cada imagem com altura setada de 150px no phpThumb
+
+até 814 pode começar uma nova categoria
+até 844 pode exibir um produto
