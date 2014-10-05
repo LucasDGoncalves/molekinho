@@ -28,7 +28,7 @@ h1{
 .product-line{
   display: block;
   clear: both;
-  height : 177px;
+  height : 182px;
   width : 670px;
   border-bottom : 1px dashed;
   /*background-color : lightgray;*/
@@ -89,8 +89,6 @@ h1{
 
 .product-main img{
   max-width : 90%;
-  max-height : 75%;
-  margin-top : 1px;
 }
 
 

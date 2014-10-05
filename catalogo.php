@@ -40,7 +40,7 @@
   mysqli_close($con);
 
   function show_category_header($nome_categoria, &$height){
-    if ($height <= 742){
+    if ($height <= 762){
       echo "<h1 class='category'><p>".$nome_categoria."</p></h1>";
       $height += 30;
     }
@@ -54,17 +54,17 @@
   function display_product($produto, &$height){
     $last_field_class = "product-details";
     
-    //950 é o maximo que a altura da pagina pode atingir, 178 é a atual altura da div de produto, ou seja se tiver mais avançado que 772, quebra a linha
-    if ($height< 773){
+    //975 é o maximo que a altura da pagina pode atingir, 183 é a atual altura da div de produto, ou seja se tiver mais avançado que 792, quebra a linha
+    if ($height<= 792){
       $html = '<div class="product-line" id="product_'.$produto["id"].'">';
-      $height += 178;
+      $height += 183;
     }
     else{
       $html = '<div class="product-line pagebreakable" id="product_'.$produto["id"].'">';
-      $height = 178;
+      $height = 183;
     }
     
-    $image_reized = 'phpThumb/phpThumb.php?src=../images/'.$produto["id"].'.jpg&h=133';
+    $image_reized = 'phpThumb/phpThumb.php?src=../images/'.$produto["id"].'.jpg&h=138';
     
     //div 1: nome + foto
       //$html .= '<div class="product-main"><p><img src="images/'.$produto["id"].'.jpg"/><br/>'.$produto["nome"].'</p></div>';
